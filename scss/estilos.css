@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #f8f6f2;
+}
+/*--------------------------Header--------------------------*/
+header{
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+}
+/*-------Subtitulos y p-------*/
+h1{
+    font-family: playfair display, serif;
+    font-size: 2.5rem;
+    color: #f8f6f2;
+    margin: 0;
+}
+h2{
+    font-family: playfair display, serif;
+    text-align: center;
+}
+p{
+    font-family: segoe ui, sans-serif;
+    text-align: center;
+    border-radius: 100px;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*---Fin de Subtitulos----*/
+/*----nav----*/
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+}
+.enlace-nav{
+    text-decoration: none;
+    color: #f8f6f2;
+}
+.mi-navbar{
+    background-color: #1c1c1c;
+}
+.navbar-nav {
+    gap: 10px;
+}
+.nav-item{
+    text-align: center;
+}
+.navbar .nav-link{
+     color: #f8f6f2;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+/*---------*/
+/*------------------------------Main-------------------------------*/
+/*-----Modelo Destacado Index-----*/
+.card__destacado{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: #c9c6c6 solid 1px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.card__img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 5px;
+}
+/*---Termino Destacado---*/
+/*---Seccion Marcas y Forma de Img---*/
+.card__marcas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.img-logo{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border: #c9c6c6 solid 1px;
+    gap: 10px;
+    margin: 5px;
+}
+/*----Fin----*/
+/*---Beneficio de una compra---*/
+.card__beneficios{                 /**/
+    display: flex;                 /**/ 
+    justify-content: center;       /**/
+}                                  /**/ 
+.card__detalle-beneficio{          /**/
+    border: #c9c6c6 solid 1px;   /**/
+    background-color: #efe6d8;   /*La Parte de beneficios se usa en el*/
+    border-radius: 10px;           /* index y en la seccion productos*/
+    margin: 5px;                   /**/
+}                                  /**/
+.beneficios{                       /**/
+    font-size: 15px;               /**/
+    text-align: center;            /**/
+}                                  /**/
+/*----Fin de beneficios----*/
+/*---Opiniones---*/
+.card__opinion{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.opinion{
+    border: #c9c6c6 solid 1px;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+/*---Fin de Opiniones---*/
+/*--------Acordion--------*/
+.accordion-item{
+    background-color: #1c1c1c;
+    border: none;
+}
+.accordion-button{
+    background-color: #1c1c1c;
+    color: #f5f5f0;
+    font-size: 30px;
+}
+.accordion-body{
+    background-color: #262626;
+    color: #f5f5f0;
+
+}
+/*---Fin de Acordion---*/
+/*--Productos dentro del Acordion--*/
+.productos{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d4af37;
+    padding: 15px 0;
+}
+.imagenes-productos{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+.name-price{
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;        
+    text-align: center;
+    width: 100%;
+}
+.boton-productos{
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+.enlace-productos{
+    color: #f8f6f2;
+    text-decoration: none;
+}
+/*--Fin de Productos--*/
+/*--------Ofertas y Combos--------*/
+.ofertas-combos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+.img-ofertas-combos{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.descripcion-oferta{
+     text-align: left;
+}
+/*--Fin de ofertas y compras--*/
+/*--Detalles y Valores---*/
+.detalles{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.detalles-nosotros{
+    font-weight: bold;
+}
+.caja-valores{
+    display: flex;
+}
+.caja-text{
+    border: #c9c6c6 solid 1px;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 20px;
+}
+/*-----Fin-----*/
+/*---Contacto---*/
+.contacto-horario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.info{
+    font-size: 1.25rem;
+    background-color: #2a2a2a;
+    border: #444 solid 2px;
+    color: #f8f6f2;
+    border-radius: 5px;
+    margin: 5px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+textarea{
+        background-color: #2f2f2f;
+        color: #f8f6f2;
+}
+input {
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    color: #f8f6f2;
+    padding: 5px;
+}
+/*---------*/
+/*--------------Media-------------*/
+/*----------Celular---------*/
+@media (max-width:520px){
+/*--index--*/
+ .card__img{
+    width: 70%;
+    margin: 0 auto;
+    }
+ .card__marcas{
+    grid-template-columns: 1fr;
+}
+ .card__destacado{
+    grid-template-columns: 1fr;
+}
+.img-logo{
+    width: 250px;
+    height: 150px;
+}
+/*Ofertas*/
+.ofertas-combos{
+    grid-template-columns: 1fr;
+    justify-items: center; 
+    align-items: stretch;
+}
+/*--Contacto--*/
+.contacto-horario{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+/*-Fin celular----*/
+/*---*/
+}
+/*--------footer--------*/
+footer{
+    background-color: #1c1c1c;
+    color: #f8f6f2;
+    display: grid;
+}
+    
