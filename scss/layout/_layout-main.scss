@@ -1,0 +1,61 @@
+@use "../utilities/variables" as *;
+
+/*----------Ofertas y Combos--------*/
+.ofertas-combos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap-chico;
+    align-items: stretch;
+    justify-items: center;
+
+    .img-ofertas-combos {
+        @include mixin.img-size(200px, 150px);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .descripcion-oferta {
+        text-align: left;
+    }
+
+
+}
+
+/*--Detalles y Valores---*/
+.detalles-valores {
+    .detalles {
+        @include flex-justify-center;
+        gap: $gap-mediano;
+
+        .detalles-nosotros {
+            font-weight: bold;
+        }
+    }
+
+    .caja-valores {
+        display: flex;
+
+        .caja-text {
+            border: $color-borde solid 1px;
+            border-radius: $radius-small;
+            margin: $spacing-medium;
+            gap: $gap-mediano;
+        }
+    }
+}
+
+/*-------Contactos-----*/
+.contacto-horario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .info {
+        font-size: 1.25rem;
+        background-color: $color-fondo-principal;
+        border: #444 solid 2px;
+        color: $color-letras;
+        border-radius: $radius-small;
+        margin: $spacing-small;
+    }
+
+}

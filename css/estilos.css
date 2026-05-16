@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f3;
+}
+
+/*Variables*/
+h1 {
+  font-family: "playfair display", serif;
+  font-size: 2.5rem;
+  color: #f8f6f2;
+  margin: 0;
+}
+
+h2 {
+  font-family: "playfair display", serif;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "segoe ui", sans-serif;
+  text-align: center;
+  border-radius: 100px;
+}
+
+/*Header*/
+header {
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  font-family: playfair display, serif;
+  font-size: 2.5rem;
+  color: #f8f6f2;
+  margin: 0;
+}
+header {
+  /*-----Nav-----*/
+}
+header .mi-navbar {
+  background-color: #1c1c1c;
+}
+header .mi-navbar .navbar-nav {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  gap: 10px;
+}
+header .mi-navbar .navbar-nav .nav-item {
+  text-align: center;
+}
+header .mi-navbar .navbar-nav .nav-item .nav-link {
+  color: #f8f6f2;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+header {
+  /*---Fin---*/
+}
+
+/*-----Fin Header----*/
+/*----------Ofertas y Combos--------*/
+.ofertas-combos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  align-items: stretch;
+  justify-items: center;
+}
+.ofertas-combos .img-ofertas-combos {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.ofertas-combos .descripcion-oferta {
+  text-align: left;
+}
+
+/*--Detalles y Valores---*/
+.detalles-valores .detalles {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.detalles-valores .detalles .detalles-nosotros {
+  font-weight: bold;
+}
+.detalles-valores .caja-valores {
+  display: flex;
+}
+.detalles-valores .caja-valores .caja-text {
+  border: #c9c6c6 solid 1px;
+  border-radius: 5px;
+  margin: 10px;
+  gap: 20px;
+}
+
+/*-------Contactos-----*/
+.contacto-horario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contacto-horario .info {
+  font-size: 1.25rem;
+  background-color: #1c1c1c;
+  border: #444 solid 2px;
+  color: #f8f6f2;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*--------footer--------*/
+footer {
+  background-color: #1c1c1c;
+  color: #f8f6f2;
+  display: grid;
+}
+
+.card__destacado {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: #c9c6c6 solid 1px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.card__destacado .card__img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.card__marcas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.card__marcas .img-logo {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border: #c9c6c6 solid 1px;
+  gap: 10px;
+  margin: 5px;
+}
+
+.card__beneficios {
+  display: flex;
+  justify-content: center;
+}
+.card__beneficios .card__detalle-beneficio {
+  border: #c9c6c6 solid 1px;
+  background-color: #efe6d8;
+  border-radius: 10px;
+  margin: 5px;
+}
+.card__beneficios .card__detalle-beneficio .beneficios {
+  font-size: 15px;
+  text-align: center;
+}
+
+.card__opinion {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.card__opinion .opinion {
+  border: #c9c6c6 solid 1px;
+  gap: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.card {
+  background-color: #1c1c1c;
+  color: #f8f6f2;
+  margin: 10px;
+}
+
+/*--------Acordion--------*/
+.accordion-item {
+  background-color: #1c1c1c;
+  border: none;
+}
+.accordion-item .accordion-button {
+  background-color: #1c1c1c;
+  color: #f5f5f0;
+  font-size: 30px;
+}
+.accordion-item .accordion-body {
+  background-color: #1c1c1c;
+  color: #f5f5f0;
+}
+.accordion-item .accordion-body .productos {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d4af37;
+  padding: 15px 0;
+}
+.accordion-item .accordion-body .productos .imagenes-productos {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+.accordion-item .accordion-body .productos .name-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.accordion-item .accordion-body .productos .name-price .boton-productos {
+  background-color: #1c1c1c;
+  border-radius: 5px;
+}
+.accordion-item .accordion-body .productos .name-price .boton-productos .enlace-productos {
+  color: #f8f6f2;
+  text-decoration: none;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.formulario input {
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: #f8f6f2;
+  padding: 5px;
+}
+.formulario textarea {
+  background-color: #1c1c1c;
+  color: #f8f6f2;
+}
+
+/*------Media------*/
+/*----------Celular---------*/
+@media (max-width: 778px) {
+  /*--index--*/
+  .card__destacado .card__img {
+    width: 80%;
+    margin: 5px auto;
+  }
+  .card__marcas {
+    grid-template-columns: 1fr;
+  }
+  .card__destacado {
+    grid-template-columns: 1fr;
+  }
+  .card__marcas .img-logo {
+    width: 300px;
+    height: 150px;
+  }
+  /*Ofertas*/
+  .ofertas-combos {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: stretch;
+  }
+  /*--Contacto--*/
+  .contacto-horario {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*-Fin celular----*/
+/*------Media------*/
+/*----------Tablet---------*/
+@media (max-width: 992px) {
+  /*--index--*/
+  .card__destacado .card__img {
+    width: 90%;
+    margin: 5px auto;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

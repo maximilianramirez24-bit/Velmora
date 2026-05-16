@@ -1,0 +1,43 @@
+@use "../utilities/variables" as *;
+
+/*Header*/
+header {
+    background-color: $color-fondo-principal;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-family: playfair display, serif;
+        font-size: 2.5rem;
+        color: $color-letras;
+        margin: 0;
+    }
+
+    /*-----Nav-----*/
+    .mi-navbar {
+        background-color: $color-fondo-principal;
+
+        .navbar-nav {
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+            margin: 0;
+            gap: $gap-chico;
+
+            .nav-item {
+                text-align: center;
+
+                .nav-link {
+                    color: $color-letras;
+                    padding: 8px 14px;
+                    border-radius: $radius-small;
+
+                }
+            }
+        }
+    }
+
+    /*---Fin---*/
+}
+
+/*-----Fin Header----*/

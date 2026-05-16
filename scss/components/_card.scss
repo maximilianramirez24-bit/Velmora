@@ -1,0 +1,65 @@
+@use "../utilities/variables" as *;
+
+.card__destacado {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: $color-borde solid 1px;
+    margin: $spacing-medium;
+    border-radius: $radius-medium;
+
+    .card__img {
+        @include mixin.img-size(150px, 150px);
+        margin: $radius-small;
+    }
+
+}
+
+.card__marcas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    .img-logo {
+        @include mixin.img-size(150px, 100px);
+        border: $color-borde solid 1px;
+        gap: $gap-chico;
+        margin: $radius-small;
+    }
+
+}
+
+.card__beneficios {
+     @include  flex-justify-center;
+
+    .card__detalle-beneficio {
+        border: $color-borde solid 1px;
+        background-color: #efe6d8;
+        border-radius: $radius-medium;
+        margin: $radius-small;
+
+        .beneficios {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+}
+
+.card__opinion {
+    @include  flex-justify-center;
+    gap: 1rem;
+
+    .opinion {
+        border: $color-borde solid 1px;
+        gap: $gap-chico;
+        border-radius: $radius-small;
+        margin: $spacing-medium;
+    }
+
+}
+
+.card {
+    background-color: $color-fondo-principal;
+    color: $color-letras;
+    margin: $radius-medium;
+}

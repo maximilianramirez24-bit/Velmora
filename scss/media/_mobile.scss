@@ -1,0 +1,44 @@
+
+/*------Media------*/
+/*----------Celular---------*/
+@media (max-width:778px) {
+
+    /*--index--*/
+    .card__destacado .card__img{
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    .card__marcas {
+        grid-template-columns: 1fr;
+    }
+
+    .card__destacado {
+        grid-template-columns: 1fr;
+    }
+
+   .card__marcas .img-logo {
+        width: 300px;
+        height: 150px;
+    }
+
+    /*Ofertas*/
+    .ofertas-combos {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: stretch;
+    }
+
+    /*--Contacto--*/
+    .contacto-horario {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*-Fin celular----*/
