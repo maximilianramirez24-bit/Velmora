@@ -1,12 +1,11 @@
-
-
 /*------Media------*/
 /*----------Tablet---------*/
-@media (max-width:992px) {
+@media(min-width:769px) and (max-width:992px){
 
     /*--index--*/
     .card__destacado .card__img{
         width: 90%;
-        margin: 5px auto;
+        height: 200px;
+        margin: 25px;
     }
 }

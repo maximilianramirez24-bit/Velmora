@@ -1,15 +1,37 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins";
 
+.card__hero{
+    .img-hero{
+        animation: hero 1.2s ease;
+    }
+    @keyframes hero{
+        from{ opacity: 0;
+              transform: translateX(-500px); 
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0); 
+        }
+    }
+}
 .card__destacado {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: $color-borde solid 1px;
     margin: $spacing-medium;
     border-radius: $radius-medium;
+    position: relative;
+    overflow: hidden;
+     
 
-    .card__img {
-        @include mixin.img-size(150px, 150px);
+    .card__img {        
+        @include mixins.img-size(150px, 150px);
         margin: $radius-small;
+        transition: transform 0.5s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 
 }
@@ -20,7 +42,7 @@
     justify-items: center;
 
     .img-logo {
-        @include mixin.img-size(150px, 100px);
+        @include mixins.img-size(150px, 100px);
         border: $color-borde solid 1px;
         gap: $gap-chico;
         margin: $radius-small;
@@ -29,7 +51,7 @@
 }
 
 .card__beneficios {
-     @include  flex-justify-center;
+     @include  mixins.flex-justify-center;
 
     .card__detalle-beneficio {
         border: $color-borde solid 1px;
@@ -46,7 +68,7 @@
 }
 
 .card__opinion {
-    @include  flex-justify-center;
+    @include  mixins.flex-justify-center;
     gap: 1rem;
 
     .opinion {
@@ -59,7 +81,14 @@
 }
 
 .card {
-    background-color: $color-fondo-principal;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transition: transform 0.5s ease;
+    background-image: linear-gradient(to bottom, #1a1919, #808080);
     color: $color-letras;
     margin: $radius-medium;
+    &:hover{
+        transform: translateY(-15px);
+         box-shadow: 0 10px 24px #00000066;
+    }
 }

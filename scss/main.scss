@@ -9,9 +9,10 @@
 @use "components/card";
 @use "components/accordion";
 @use "components/formularios.scss";
-@use "media/mobile";
-@use "media/tablet";
-@use "utilities/mixins"
+@use "media/1mobile" as *;
+@use "media/tablet" as *;
+@use "media/computadora" as*;
+@use "utilities/mixins";
 
 
 

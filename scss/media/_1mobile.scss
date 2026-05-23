@@ -1,10 +1,9 @@
-
 /*------Media------*/
 /*----------Celular---------*/
 @media (max-width:778px) {
 
     /*--index--*/
-    .card__destacado .card__img{
+    .card__destacado .card__img {
         width: 80%;
         margin: 5px auto;
     }
@@ -17,7 +16,7 @@
         grid-template-columns: 1fr;
     }
 
-   .card__marcas .img-logo {
+    .card__marcas .img-logo {
         width: 300px;
         height: 150px;
     }
