@@ -60,7 +60,6 @@ header .mi-navbar .navbar-nav {
   gap: 30px;
   list-style-type: none;
   margin: 0;
-  gap: 10px;
 }
 header .mi-navbar .navbar-nav .nav-item {
   text-align: center;
@@ -96,6 +95,10 @@ header {
 }
 
 /*--Detalles y Valores---*/
+.historia p {
+  margin: 15px;
+}
+
 .detalles-valores .detalles {
   display: flex;
   justify-content: center;

@@ -1,3 +1,5 @@
+@use "utilities/mixins";
+
 @use "base/reset";
 @use "base/body";
 @use "base/tipografia";
@@ -9,10 +11,11 @@
 @use "components/card";
 @use "components/accordion";
 @use "components/formularios.scss";
+
 @use "media/1mobile" as *;
 @use "media/tablet" as *;
-@use "media/computadora" as*;
-@use "utilities/mixins";
+@use "media/computadora" as *;
+
 
 
 

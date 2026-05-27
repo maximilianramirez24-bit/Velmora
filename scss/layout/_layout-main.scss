@@ -24,6 +24,11 @@
 }
 
 /*--Detalles y Valores---*/
+.historia{
+    p{
+        margin: 15px
+    }
+}
 .detalles-valores {
     .detalles {
         @include mixins.flex-justify-center;
