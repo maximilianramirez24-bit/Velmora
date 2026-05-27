@@ -1,9 +1,42 @@
 @use "../utilities/variables" as *;
 
 /*--------footer--------*/
-footer {
-    background-color: $color-fondo-principal;
+.footer {
+    background: $color-fondo-principal;
     color: $color-letras;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
 
+    .columna {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        align-items: center; 
+
+        h2 {
+            font-size: 40px;
+            letter-spacing: 4px;
+        }
+
+        h3 {
+            margin-bottom: 15px;
+        }
+
+        .texto {
+            letter-spacing: 2px;
+        }
+
+        a {
+            color: $color-letras;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
 }

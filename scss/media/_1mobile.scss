@@ -38,6 +38,10 @@
         display: flex;
         flex-direction: column;
     }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /*-Fin celular----*/

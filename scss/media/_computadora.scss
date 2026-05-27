@@ -5,5 +5,8 @@
         height: 200px;
         margin: 5px auto;
     }
-
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

@@ -8,4 +8,9 @@
         height: 200px;
         margin: 25px;
     }
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
