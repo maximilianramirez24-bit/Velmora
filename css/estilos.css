@@ -106,9 +106,13 @@ header {
 }
 .detalles-valores .detalles .detalles-nosotros {
   font-weight: bold;
+  margin: 15px;
 }
 .detalles-valores .caja-valores {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 10px;
 }
 .detalles-valores .caja-valores .caja-text {
   border: #c9c6c6 solid 1px;
@@ -137,8 +141,10 @@ header {
   color: #f8f6f2;
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 15%;
   flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
 .footer .columna {
   width: 250px;
@@ -222,6 +228,9 @@ header {
   background-color: #efe6d8;
   border-radius: 15px;
   margin: 5px;
+}
+.card__beneficios .card__detalle-beneficio:hover {
+  background-color: #c9a14a;
 }
 .card__beneficios .card__detalle-beneficio .beneficios {
   font-size: 15px;

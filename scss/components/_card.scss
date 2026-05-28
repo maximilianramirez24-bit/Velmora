@@ -23,6 +23,7 @@
     border-radius: $radius-medium;
     position: relative;
     overflow: hidden;
+
      
 
     .card__img {        
@@ -58,6 +59,9 @@
         background-color: #efe6d8;
         border-radius: $radius-medium;
         margin: $radius-small;
+             &:hover{
+        background-color: #c9a14a;
+     }
 
         .beneficios {
             font-size: 15px;

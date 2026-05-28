@@ -36,11 +36,15 @@
 
         .detalles-nosotros {
             font-weight: bold;
+            margin: 15px;
         }
     }
 
     .caja-valores {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin: 10px;
 
         .caja-text {
             border: $color-borde solid 1px;
