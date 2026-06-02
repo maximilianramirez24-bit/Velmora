@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://velmora-umber.vercel.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://velmora-umber.vercel.app/pages/productos.html</loc>
+  </url>
+
+  <url>
+    <loc>https://velmora-umber.vercel.app/pages/ofertas.html</loc>
+  </url>
+
+  <url>
+    <loc>https://velmora-umber.vercel.app/pages/nosotros.html</loc>
+  </url>
+
+  <url>
+    <loc>https://velmora-umber.vercel.app/pages/contacto.html</loc>
+  </url>
+
+</urlset>
